@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Account Entry System</h2>
+
+    <div class="form-box">
+      <label>Type</label>
+      <select id="type">
+        <option value="CR">CR - Credit</option>
+        <option value="DR">DR - Debit</option>
+      </select>
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Enter name" />
+      <label>Amount</label>
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <button onclick="addEntry()">Submit</button>
+    </div>
+
+    <table id="accountTable">
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Name</th>
+          <th>Credit</th>
+          <th>Debit</th>
+          <th id="actionsHeader" style="display: none">Actions</th>
+        </tr>
+      </thead>
+
+      <tbody id="tableBody"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"><strong>Total</strong></td>
+          <td id="totalCredit">0</td>
+          <td id="totalDebit">0</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <button class="save-btn" disabled onclick="saveForm()">SAVE</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

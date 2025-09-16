@@ -1,0 +1,139 @@
+/* Global */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+/* Form Box */
+.form-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.form-box label {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+input, select {
+  padding: 10px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Submit button */
+.form-box button {
+  background: #3498db;
+  color: #fff;
+}
+.form-box button:hover {
+  background: #2980b9;
+}
+
+/* Table */
+table {
+  width: 90%;
+  margin: 0 auto 30px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background: #3498db;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+tr:hover {
+  background: #f9f9f9;
+}
+
+/* Actions */
+.actions button {
+  margin: 3px;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.actions button:first-child {
+  background: #2ecc71;
+  color: #fff;
+}
+.actions button:first-child:hover {
+  background: #27ae60;
+}
+
+.actions button:last-child {
+  background: #e74c3c;
+  color: #fff;
+}
+.actions button:last-child:hover {
+  background: #c0392b;
+}
+
+/* Save Button */
+.save-btn {
+  background: #8e44ad;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.save-btn:hover:enabled {
+  background: #732d91;
+}
+
+.save-btn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table {
+    font-size: 13px;
+  }
+  input, select, button {
+    margin: 5px;
+    font-size: 13px;
+  }
+}
